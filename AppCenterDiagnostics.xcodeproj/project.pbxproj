@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		687B669232801F1057AC1D41 /* Pods_AppCenterDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158F3F302F518D29F333C84F /* Pods_AppCenterDiagnostics.framework */; };
 		EF63D9B9245A08CA0023A922 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63D9B8245A08CA0023A922 /* AppDelegate.swift */; };
 		EF63D9BB245A08CA0023A922 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63D9BA245A08CA0023A922 /* SceneDelegate.swift */; };
 		EF63D9BD245A08CA0023A922 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF63D9BC245A08CA0023A922 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		158F3F302F518D29F333C84F /* Pods_AppCenterDiagnostics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppCenterDiagnostics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AB08502CC232C0AE42E6C6B /* Pods-AppCenterDiagnostics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCenterDiagnostics.debug.xcconfig"; path = "Target Support Files/Pods-AppCenterDiagnostics/Pods-AppCenterDiagnostics.debug.xcconfig"; sourceTree = "<group>"; };
+		D7BAA34AD83A08FC292F0E05 /* Pods-AppCenterDiagnostics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCenterDiagnostics.release.xcconfig"; path = "Target Support Files/Pods-AppCenterDiagnostics/Pods-AppCenterDiagnostics.release.xcconfig"; sourceTree = "<group>"; };
 		EF63D9B5245A08CA0023A922 /* AppCenterDiagnostics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCenterDiagnostics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF63D9B8245A08CA0023A922 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF63D9BA245A08CA0023A922 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				687B669232801F1057AC1D41 /* Pods_AppCenterDiagnostics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B306B76B6CA997DDC409B62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AB08502CC232C0AE42E6C6B /* Pods-AppCenterDiagnostics.debug.xcconfig */,
+				D7BAA34AD83A08FC292F0E05 /* Pods-AppCenterDiagnostics.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EAF5CBC97D1EA3462E8CE877 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				158F3F302F518D29F333C84F /* Pods_AppCenterDiagnostics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF63D9AC245A08CA0023A922 = {
 			isa = PBXGroup;
 			children = (
 				EF63D9B7245A08CA0023A922 /* AppCenterDiagnostics */,
 				EF63D9B6245A08CA0023A922 /* Products */,
+				8B306B76B6CA997DDC409B62 /* Pods */,
+				EAF5CBC97D1EA3462E8CE877 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF63D9C9245A08CC0023A922 /* Build configuration list for PBXNativeTarget "AppCenterDiagnostics" */;
 			buildPhases = (
+				36831FF5218E0450030ED982 /* [CP] Check Pods Manifest.lock */,
 				EF63D9B1245A08CA0023A922 /* Sources */,
 				EF63D9B2245A08CA0023A922 /* Frameworks */,
 				EF63D9B3245A08CA0023A922 /* Resources */,
@@ -132,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36831FF5218E0450030ED982 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppCenterDiagnostics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF63D9B1245A08CA0023A922 /* Sources */ = {
@@ -282,10 +332,12 @@
 		};
 		EF63D9CA245A08CC0023A922 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AB08502CC232C0AE42E6C6B /* Pods-AppCenterDiagnostics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UBF8T346G9;
+				DEVELOPMENT_TEAM = ZAD3U35X3Z;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppCenterDiagnostics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +352,12 @@
 		};
 		EF63D9CB245A08CC0023A922 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7BAA34AD83A08FC292F0E05 /* Pods-AppCenterDiagnostics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UBF8T346G9;
+				DEVELOPMENT_TEAM = ZAD3U35X3Z;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppCenterDiagnostics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
