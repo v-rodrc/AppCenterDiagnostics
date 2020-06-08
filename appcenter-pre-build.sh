@@ -5,3 +5,6 @@
 #
 #  Created by Christopher Rodriguez on 6/8/20.
 #  Copyright © 2020 Christopher Rodriguez. All rights reserved.
+$CORES = sysctl -n hw.ncpu
+
+echo $CORES
