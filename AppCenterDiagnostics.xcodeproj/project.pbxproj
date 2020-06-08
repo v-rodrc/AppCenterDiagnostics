@@ -28,6 +28,7 @@
 		EF63D9C1245A08CC0023A922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF63D9C4245A08CC0023A922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF63D9C6245A08CC0023A922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFED521D248EECAE008F5977 /* appcenter-pre-build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "appcenter-pre-build.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		EF63D9AC245A08CA0023A922 = {
 			isa = PBXGroup;
 			children = (
+				EFED521D248EECAE008F5977 /* appcenter-pre-build.sh */,
 				EF63D9B7245A08CA0023A922 /* AppCenterDiagnostics */,
 				EF63D9B6245A08CA0023A922 /* Products */,
 				8B306B76B6CA997DDC409B62 /* Pods */,
