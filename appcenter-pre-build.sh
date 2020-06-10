@@ -7,6 +7,10 @@
 #  Copyright © 2020 Christopher Rodriguez. All rights reserved.
 
 echo "Hello World"
+
+echo 'Hello, world.' >foo.txt
+cat foo.txt
+
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool YES
 
 sysctl -n hw.ncpu
