@@ -13,7 +13,7 @@ sysctl -n hw.ncpu
 
 defaults write com.apple.Xcode PBXNumberOfParallelBuildSubtasks 8
 
--warn-long-function-bodies=200
+#-warn-long-function-bodies=200
 
 
 
