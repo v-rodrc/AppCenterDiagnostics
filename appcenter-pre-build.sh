@@ -7,3 +7,7 @@
 #  Copyright © 2020 Christopher Rodriguez. All rights reserved.
 
 echo "Hello World"
+sysctl -n hw.ncpu
+
+
+
