@@ -9,5 +9,7 @@
 echo "Hello World"
 sysctl -n hw.ncpu
 
+defaults write com.apple.Xcode PBXNumberOfParallelBuildSubtasks 8
+
 
 
