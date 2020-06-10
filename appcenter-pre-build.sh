@@ -13,6 +13,8 @@ sysctl -n hw.ncpu
 
 defaults write com.apple.Xcode PBXNumberOfParallelBuildSubtasks 8
 
+defaults write com.apple.dt.Xcode BuildSystemScheduleInherentlyParallelCommandsExclusively -bool NO
+
 #-warn-long-function-bodies=200
 
 
