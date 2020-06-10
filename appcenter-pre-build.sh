@@ -7,6 +7,8 @@
 #  Copyright © 2020 Christopher Rodriguez. All rights reserved.
 
 echo "Hello World"
+defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool YES
+
 sysctl -n hw.ncpu
 
 defaults write com.apple.Xcode PBXNumberOfParallelBuildSubtasks 8
