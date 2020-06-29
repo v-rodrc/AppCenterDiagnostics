@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A3282A5B2437E609EEB85861D7ECE717"
-               BuildableName = "AppCenter"
-               BlueprintName = "AppCenter"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "3CC265E3332161E77CB18B52196C91C5"
+               BuildableName = "Pods_AppCenterDiagnostics.framework"
+               BlueprintName = "Pods-AppCenterDiagnostics"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
